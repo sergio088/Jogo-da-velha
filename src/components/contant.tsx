@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 
 interface props {
-  tema: Boolean;
+  tema: boolean;
 }
 /**
  * Melhorias sugeridas:
@@ -47,7 +47,7 @@ export default function Content({ tema = false }: props) {
       [2, 5, 8],
     ];
 
-    combinaçoes.forEach((p, idx) => {
+    combinaçoes.forEach((p) => {
       if (
         state[p[0]] === state[p[1]] &&
         state[p[1]] === state[p[2]] &&
